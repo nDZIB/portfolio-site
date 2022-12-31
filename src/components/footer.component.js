@@ -3,7 +3,7 @@ import React from "react";
 export class FooterComponent extends React.Component{
     render() {
         return (
-            <footer className={`flex justify-between text-sm px-[5rem] pt-10 pb-12`}>
+            <footer className={`border-t-2 mt-[10rem] flex justify-between text-sm px-[5rem] pt-10 pb-12`}>
                 <nav className={`[&>*]:font-semibold`}>
                     <a href="#">About</a>
                     <a href="#" className={`ml-8`}>Projects</a>
