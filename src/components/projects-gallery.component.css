@@ -1,0 +1,4 @@
+.gallery {
+    overflow: hidden;
+    clip-path: polygon(0 0, 20% 10%, 50% 12%, 80% 10%, 100% 0, 100% 90%, 50% 100%, 0 90%);
+}

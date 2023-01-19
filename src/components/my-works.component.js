@@ -6,7 +6,7 @@ export class MyWorksComponent extends React.Component{
     render() {
         return (
             <>
-                <div className={`border-[1px] p-7 self-start rounded-2xl w-[38%] text-sm leading-6`}>
+                <div className={`border-[1px] p-7 self-start rounded-2xl w-[100%] lg:w-[38%] text-sm leading-6`}>
                     <h2 className={`flex items-center font-bold text-lg`}><Icon icon="ph:briefcase" /><span className={`ml-2`}>Work Experience</span></h2>
                     <div className={`mt-6 [&>*]:mb-6`}>
                         <CardComponent />

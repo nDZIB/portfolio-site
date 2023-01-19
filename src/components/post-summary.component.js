@@ -5,7 +5,7 @@ export class PostSummaryComponent extends React.Component {
     render() {
         return (
             <>
-                <a href="#" className={`block hover:bg-stone-50 px-8 mb-4 py-6 rounded-xl`}>
+                <a href="#" className={`block hover:bg-stone-50 px-4 py-3 md:px-8 mb-4 md:py-6 rounded-xl`}>
                     <p className="text-sm text-slate-400 pl-3 border-l-2 border-slate-400">December 31 2022</p>
                     <h2 className={`mt-2 font-medium`}>Crafting a design system for a multiplanetary future</h2>
                     <p className={`mt-2 text-sm text-slate-700 leading-6`}>
