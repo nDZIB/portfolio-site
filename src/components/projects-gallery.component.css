@@ -1,4 +1,30 @@
+.galleries {
+    @apply relative overflow-hidden;
+
+    clip-path: polygon(0 0, 30% 50%, 50% 0,  70% 50%, 100% 0, 100% 100%, 50% 80%, 0 100%);
+}
+
 .gallery {
-    overflow: hidden;
-    clip-path: polygon(0 0, 20% 10%, 50% 12%, 80% 10%, 100% 0, 100% 90%, 50% 100%, 0 90%);
+    @apply flex justify-between mx-0 lg:mx-[-10rem];
+}
+
+.project-img {
+    @apply h-[180px] w-[224px] lg:h-[480px] lg:w-[512px] rounded-2xl;
+}
+
+.gallery {
+    animation: slide infinite 15s;
+    animation-timing-function: linear;
+    @apply relative;
+}
+
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-40%);
+    }
 }

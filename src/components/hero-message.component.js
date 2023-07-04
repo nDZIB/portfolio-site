@@ -5,7 +5,7 @@ import avatar from '../assets/images/me.jpeg'
 export class HeroMessageComponent extends React.Component {
     render() {
         return (
-            <div className={`flex items-center flex-col-reverse lg:flex-row lg:justify-between lg:items-start lg:pt-6`}>
+            <div className={`hidden flex items-center flex-col-reverse lg:flex-row lg:justify-between lg:items-start lg:pt-6`}>
                 <div className={`w-[98%] md:w-[90%] lg:w-[60%]`}>
                     <h1 className={`mt-5 lg:mt-8 lg:mt-16 text-3xl md:text-6xl font-bold`}>Serkwi Bruno Ndzi, full-stack web and mobile engineer</h1>
 
