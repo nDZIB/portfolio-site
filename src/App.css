@@ -173,3 +173,39 @@
 .skill-level {
     @apply absolute h-[3px] w-[90%] bg-[rgba(255,255,255,.6)];
 }
+
+.projects {
+    @apply px-[8rem] mt-24;
+}
+
+.projects-list {
+    @apply grid grid-cols-3 gap-8 w-full pt-5;
+}
+
+.project {
+    @apply border-[1px] p-4 border-transparent flex flex-col gap-6;
+}
+
+.project-img {
+    @apply h-2 w-2 border-[2px] border-transparent px-2 group-hover:border-green-300;
+}
+
+.project-info {
+    @apply flex text-white justify-between;
+}
+
+.project-tags {
+    @apply text-white flex gap-4;
+}
+
+.project-tag {
+    @apply group-hover:bg-green-300 group-hover:opacity-80 group-hover:text-black border-[1px] py-[2px] px-2 rounded-full text-sm opacity-60;
+}
+
+.project-name {
+    @apply font-bold text-2xl;
+}
+
+.view-project {
+    @apply group-hover:text-green-300;
+}

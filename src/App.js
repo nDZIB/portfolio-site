@@ -8,6 +8,8 @@ import { FooterComponent } from "./components/footer.component";
 import { MyPostsComponent } from "./components/my-posts.component";
 
 function App() {
+  const projects = [1, 2, 4, 5]
+
   return (
     // <main className={`app min-h-screen flex justify-center bg-slate-50`}>
     //     <div id="container" className={`w-[98vw] md:w-[62vw] bg-white px-2 md:px-16 pt-4`}>
@@ -159,10 +161,26 @@ function App() {
         </div>
 
         <section className={`projects`}>
-
+          <h2 className={`section-title`}>Projects</h2>
+          <ul className={`projects-list`}>
+            {
+              projects.map(project => {
+                return <li className={`project group`}>
+                  <img className={`project-img`} src={`http://localhost:4200/assets/img/gowaka.png`} />
+                  <div className={`project-tags`}>
+                    <span className={`project-tag`}>Web development</span>
+                    <span className={`project-tag`}>on-going</span>
+                  </div>
+                  <div className={`project-info`}>
+                    <h3 className={`project-name`}>Partiner BPO</h3>
+                    <svg className={`view-project`} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 512 512"><path fill="currentColor" d="M400 464H48V104h192V72H16v424h416V272h-32v192z"/><path fill="currentColor" d="M304 16v32h137.373L188.687 300.687l22.626 22.626L464 70.627V208h32V16H304z"/></svg>
+                  </div>
+                </li>
+              })
+            }
+          </ul>
         </section>
       </main>
-
     </div>
   );
 }
