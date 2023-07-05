@@ -22,7 +22,7 @@ function App() {
     //     </div>
     // </main>
 
-    <main className={`app`}>
+    <div className={`app`}>
       <header className={`header`}>
 
         <img className={`logo`} src='https://ui-themez.smartinnovates.net/items/hawke/assets/imgs/logo-light.png' />
@@ -40,7 +40,7 @@ function App() {
 
       </header>
 
-      <section className={`body`}>
+      <main className={`body`}>
         <div className={`resume`}>
           <figure className={`bio`}>
             <img className={`avatar`} src='https://media.licdn.com/dms/image/D4E03AQGPUlXGnGURNg/profile-displayphoto-shrink_200_200/0/1675959954904?e=1694044800&v=beta&t=izLC_E5eoCIG0glpODio5WFVA0PnRtYSr3WPaewiVuY' />
@@ -111,13 +111,59 @@ function App() {
 
             <div className={`skills section`}>
               <h2 className={`section-title`}>Skills</h2>
+
+              <ul className={`skills-set`}>
+                <li className={`skill`}>
+                  <svg className={`skill-img`} xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 15 15"><path fill="currentColor" d="M8.293 2.293a1 1 0 0 1 1.414 0l4.5 4.5a1 1 0 0 1 0 1.414l-4.5 4.5a1 1 0 0 1-1.414-1.414L11 8.5H1.5a1 1 0 0 1 0-2H11L8.293 3.707a1 1 0 0 1 0-1.414Z" /></svg>
+                  <p className={`skill-name`}>UI / UX Design</p>
+                  <span className={`skill-score`}>95%</span>
+
+                  <div className={`skill-progress`}><div className={`skill-level`}></div></div>
+                </li>
+
+                <li className={`skill`}>
+                  <svg className={`skill-img`} xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 15 15"><path fill="currentColor" d="M8.293 2.293a1 1 0 0 1 1.414 0l4.5 4.5a1 1 0 0 1 0 1.414l-4.5 4.5a1 1 0 0 1-1.414-1.414L11 8.5H1.5a1 1 0 0 1 0-2H11L8.293 3.707a1 1 0 0 1 0-1.414Z" /></svg>
+                  <p className={`skill-name`}>UI / UX Design</p>
+                  <span className={`skill-score`}>95%</span>
+
+                  <div className={`skill-progress`}><div className={`skill-level`}></div></div>
+                </li>
+
+                <li className={`skill`}>
+                  <svg className={`skill-img`} xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 15 15"><path fill="currentColor" d="M8.293 2.293a1 1 0 0 1 1.414 0l4.5 4.5a1 1 0 0 1 0 1.414l-4.5 4.5a1 1 0 0 1-1.414-1.414L11 8.5H1.5a1 1 0 0 1 0-2H11L8.293 3.707a1 1 0 0 1 0-1.414Z" /></svg>
+                  <p className={`skill-name`}>UI / UX Design</p>
+                  <span className={`skill-score`}>95%</span>
+
+                  <div className={`skill-progress`}><div className={`skill-level`}></div></div>
+                </li>
+
+                <li className={`skill`}>
+                  <svg className={`skill-img`} xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 15 15"><path fill="currentColor" d="M8.293 2.293a1 1 0 0 1 1.414 0l4.5 4.5a1 1 0 0 1 0 1.414l-4.5 4.5a1 1 0 0 1-1.414-1.414L11 8.5H1.5a1 1 0 0 1 0-2H11L8.293 3.707a1 1 0 0 1 0-1.414Z" /></svg>
+                  <p className={`skill-name`}>UI / UX Design</p>
+                  <span className={`skill-score`}>95%</span>
+
+                  <div className={`skill-progress`}><div className={`skill-level`}></div></div>
+                </li>
+
+                <li className={`skill`}>
+                  <svg className={`skill-img`} xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 15 15"><path fill="currentColor" d="M8.293 2.293a1 1 0 0 1 1.414 0l4.5 4.5a1 1 0 0 1 0 1.414l-4.5 4.5a1 1 0 0 1-1.414-1.414L11 8.5H1.5a1 1 0 0 1 0-2H11L8.293 3.707a1 1 0 0 1 0-1.414Z" /></svg>
+                  <p className={`skill-name`}>UI / UX Design</p>
+                  <span className={`skill-score`}>95%</span>
+
+                  <div className={`skill-progress`}><div className={`skill-level`}></div></div>
+                </li>
+              </ul>
             </div>
           </div>
 
         </div>
-      </section>
 
-    </main>
+        <section className={`projects`}>
+
+        </section>
+      </main>
+
+    </div>
   );
 }
 

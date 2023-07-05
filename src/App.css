@@ -145,3 +145,31 @@
 .experience-role {
     @apply opacity-80;
 }
+
+.skills-set {
+    @apply grid grid-cols-2 gap-5;
+}
+
+.skill {
+    @apply relative border-[1px] border-[rgba(255,255,255,.1)] rounded-lg py-2 flex items-center justify-center gap-4;
+}
+
+.skill-img {
+    @apply mr-[20px];
+}
+
+.skill-name {
+    @apply py-6 text-white;
+}
+
+.skill-score {
+    @apply border-[2px] rounded-full p-[1px] px-2 border-[rgba(255,255,255,.1)] text-white absolute top-[10%] right-[4%] text-sm opacity-70;
+}
+
+.skill-progress {
+    @apply h-[3px] bg-[rgba(255,255,255,.3)] w-[75%] absolute bottom-0;
+}
+
+.skill-level {
+    @apply absolute h-[3px] w-[90%] bg-[rgba(255,255,255,.6)];
+}
