@@ -23,7 +23,7 @@
 /* =========================================== */
 
 .body {
-    @apply py-20 rounded-2xl mx-auto max-w-[85vw] min-h-screen border-[1px] border-[rgba(255,255,255,.1)];
+    @apply py-20 flex flex-col gap-32 rounded-2xl mx-auto max-w-[85vw] min-h-screen border-[1px] border-[rgba(255,255,255,.1)];
 }
 
 .resume {
@@ -208,4 +208,65 @@
 
 .view-project {
     @apply group-hover:text-green-300;
+}
+
+.contact-form {
+    @apply flex flex-col min-w-[38rem] gap-10 text-white;
+}
+
+.contact-info {
+    @apply flex gap-10;
+}
+
+.contact-info > * {
+    @apply flex-1;
+}
+
+.input {
+    /* @apply; */
+}
+
+.textarea {
+    @apply min-h-[12rem] flex-1 resize-none;
+}
+
+.input, .textarea {
+    @apply p-3 bg-transparent rounded border-[2px] border-[rgba(255,255,255,.1)] placeholder:opacity-40 outline-none focus:border-white;
+}
+
+.ntouch {
+    @apply text-white border-[1px] border-[rgba(255,255,255.1)] rounded-full px-4 py-[4px] opacity-60;
+}
+
+.contact-title {
+    @apply text-5xl text-white font-bold leading-[3.6rem];
+}
+
+.contact-desc {
+    @apply text-white opacity-40 text-lg;
+}
+
+.contact-primary {
+    @apply text-[#55E6A5] font-bold text-2xl py-7 block;
+}
+
+.contact-social {
+    @apply flex gap-8;
+}
+
+.contact-social-icon  {
+    @apply h-[35px] w-[35px];
+}
+
+.footer {
+    @apply flex pt-16 justify-between mx-[8rem] border-t-[2px] border-[rgba(255,255,255,.2)];
+}
+
+.getntouch {
+    @apply flex flex-col items-start gap-4 max-w-[35rem];
+}
+
+.btn-send {
+    background-image: linear-gradient(to right, 0 #55E6A5, transparent 50%);
+    @apply border-[1px] border-[rgba(255,255,255,.3)] py-4 uppercase;
 }
