@@ -222,16 +222,12 @@
     @apply flex-1;
 }
 
-.input {
-    /* @apply; */
-}
-
 .textarea {
-    @apply min-h-[12rem] flex-1 resize-none;
+    @apply min-h-[14rem] flex-1 resize-none;
 }
 
 .input, .textarea {
-    @apply p-3 bg-transparent rounded border-[2px] border-[rgba(255,255,255,.1)] placeholder:opacity-40 outline-none focus:border-white;
+    @apply p-4 bg-transparent rounded border-[2px] border-[rgba(255,255,255,.1)] placeholder:opacity-40 outline-none focus:border-white;
 }
 
 .ntouch {
@@ -267,6 +263,10 @@
 }
 
 .btn-send {
-    background-image: linear-gradient(to right, 0 #55E6A5, transparent 50%);
-    @apply border-[1px] border-[rgba(255,255,255,.3)] py-4 uppercase;
+    background-image: linear-gradient(to right, #55E6A5 1%, transparent 0);
+    @apply hover:text-black border-[1px] border-[rgba(255,255,255,.3)] py-4 uppercase hover:text-black;
+}
+
+.btn-send:hover {
+    background-image: linear-gradient(to right, #55E6A5 100%, transparent 0%);
 }
