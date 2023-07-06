@@ -1,31 +1,16 @@
 import './App.css';
 import * as React from 'react';
-import { HeaderComponent } from "./components/header.component";
-import { HeroMessageComponent } from "./components/hero-message.component";
-import { ProjectsGalleryComponent } from "./components/projects-gallery.component";
-import { MyWorksComponent } from "./components/my-works.component";
-import { FooterComponent } from "./components/footer.component";
-import { MyPostsComponent } from "./components/my-posts.component";
+
 
 function App() {
+
+  const bodyEltRef = React.createRef();
+  const headerRef = React.createRef();
   const projects = [1, 2, 4, 5]
 
   return (
-    // <main className={`app min-h-screen flex justify-center bg-slate-50`}>
-    //     <div id="container" className={`w-[98vw] md:w-[62vw] bg-white px-2 md:px-16 pt-4`}>
-    //         <HeaderComponent />
-    //         <HeroMessageComponent />
-    //         <ProjectsGalleryComponent />
-    //         <div className={`flex flex-col-reverse lg:flex-row lg:justify-between mt-[2rem] md:mt-[5rem] leading-8`}>
-    //             <MyPostsComponent />
-    //             <MyWorksComponent />
-    //         </div>
-    //         <FooterComponent />
-    //     </div>
-    // </main>
-
     <div className={`app`}>
-      <header className={`header`}>
+      <header ref={headerRef} className={`header`}>
 
         <img className={`logo`} src='https://ui-themez.smartinnovates.net/items/hawke/assets/imgs/logo-light.png' />
 
@@ -51,7 +36,7 @@ function App() {
         </ul>
       </header>
 
-      <main className={`body`}>
+      <main ref={bodyEltRef} className={`body`}>
         <div className={`resume`}>
           <figure className={`bio`}>
             <img className={`avatar`} src='https://media.licdn.com/dms/image/D4E03AQGPUlXGnGURNg/profile-displayphoto-shrink_200_200/0/1675959954904?e=1694044800&v=beta&t=izLC_E5eoCIG0glpODio5WFVA0PnRtYSr3WPaewiVuY' />
