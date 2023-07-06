@@ -1,5 +1,6 @@
 import './App.css';
 import * as React from 'react';
+import logo from './assets/images/logo.png';
 
 
 function App() {
@@ -12,7 +13,7 @@ function App() {
     <div className={`app`}>
       <header ref={headerRef} className={`header`}>
 
-        <img className={`logo`} src='https://ui-themez.smartinnovates.net/items/hawke/assets/imgs/logo-light.png' />
+        <img className={`logo`} src={logo} />
 
         <ul className={`nav-lg`}>
           <li className={`nav-item`}><a href='#about'>about me</a></li>
