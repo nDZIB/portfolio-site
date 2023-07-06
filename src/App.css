@@ -4,12 +4,16 @@
 }
 
 .nav-lg {
-    @apply p-6 flex items-center opacity-90 text-white uppercase gap-10;
+    @apply hidden lg:flex p-6 items-center opacity-90 text-white uppercase gap-10;
 }
 
 .btn-hire {
-    @apply bg-white text-sm py-4 px-8 rounded rounded-t-lg;
+    @apply hidden lg:block bg-white text-sm py-4 px-8 rounded rounded-t-lg;
     clip-path: polygon(2% 0,  98% 0, 100% 100%, 0 100%);
+}
+
+.menu-trigger-sm {
+    @apply text-white;
 }
 
 .logo {
@@ -17,17 +21,21 @@
 }
 
 .header {
-    @apply flex py-2 items-center justify-between max-w-[70vw] mx-auto;
+    @apply flex px-4 py-4 lg:py-2 items-center justify-between lg:max-w-[70vw] mx-auto;
 }
 
 /* =========================================== */
 
 .body {
-    @apply py-20 flex flex-col gap-32 rounded-2xl mx-auto max-w-[85vw] min-h-screen border-[1px] border-[rgba(255,255,255,.1)];
+    @apply max-w-[98vw] rounded lg:py-20 flex flex-col lg:gap-32 lg:rounded-2xl mx-auto lg:max-w-[85vw] min-h-screen border-[1px] border-[rgba(255,255,255,0)];
+}
+
+.body > * {
+    @apply md:max-w-[60%] md:mx-auto lg:max-w-full px-6 lg:px-0;
 }
 
 .resume {
-    @apply flex justify-center items-start gap-8;
+    @apply relative flex flex-col lg:flex-row justify-center items-start gap-8;
 }
 
 .sm {
@@ -38,11 +46,11 @@
 }
 
 .bio {
-    @apply flex flex-col gap-7 rounded p-8 border-[1px] border-[rgba(255,255,255,.1)];
+    @apply lg:sticky top-20 w-full lg:w-auto flex flex-col gap-7 rounded p-8 border-[1px] border-[rgba(255,255,255,.1)];
 }
 
 .avatar {
-    @apply h-[22rem] w-[22rem];
+    @apply w-full lg:h-[22rem] lg:w-[22rem];
 }
 
 .name-tag {
@@ -50,23 +58,23 @@
 }
 
 .name {
-    @apply text-2xl font-bold;
+    @apply text-xl lg:text-2xl font-bold;
 }
 
 .email {
-    @apply opacity-70;
+    @apply text-sm lg:text-lg opacity-70;
 }
 
 .section {
-    @apply ml-[8rem] max-w-[650px];
+    @apply lg:ml-[8rem] lg:max-w-[650px];
 }
 
 .summary {
-    @apply flex flex-col gap-32;
+    @apply flex flex-col gap-10 lg:gap-24;
 }
 
 .cta {
-    @apply  text-white leading-[3.6rem] text-6xl;
+    @apply text-center lg:text-left text-4xl text-white leading-[2.6rem] lg:leading-[3.6rem] lg:text-6xl;
 }
 
 .name-cta {
@@ -74,11 +82,11 @@
 }
 
 .cta-role {
-    @apply border-[1px] text-4xl py-2 px-4 border-[rgba(255,255,255,.2)] rounded;
+    @apply border-[1px] text-xl lg:text-4xl py-2 px-4 border-[rgba(255,255,255,.2)] rounded;
 }
 
 .numerics {
-    @apply flex justify-between;
+    @apply flex flex-col lg:flex-row gap-4 lg:gap-8 justify-between;
 }
 
 .info {
@@ -86,19 +94,19 @@
 }
 
 .info-value {
-    @apply text-6xl font-bold;
+    @apply w-[20%] text-center lg:text-left lg:w-auto text-4xl lg:text-6xl font-bold;
 }
 
 .info-desc {
-    @apply opacity-40 max-w-[5rem];
+    @apply opacity-40 lg:max-w-[5rem];
 }
 
 .download-cv-btn {
-    @apply flex text-white opacity-90 bg-slate-50 p-[1px] w-[12rem] rounded-lg;
+    @apply flex text-white opacity-90 bg-slate-50 p-[1px] lg:w-[12rem] rounded-lg;
 }
 
 .download-cv-btn > span {
-    @apply bg-black block w-full rounded-[inherit] flex items-center justify-center;
+    @apply bg-black py-3 block w-full rounded-[inherit] flex items-center justify-center;
 }
 
 .about-me {
@@ -110,7 +118,7 @@
 }
 
 .about-me-title {
-    @apply uppercase opacity-90;
+    @apply text-xl font-bold uppercase opacity-90;
 }
 
 .section-title {
@@ -127,11 +135,11 @@
 }
 
 .experience-item-summary {
-    @apply flex gap-8 items-center text-white cursor-pointer;
+    @apply flex gap-4 lg:gap-8 items-center text-white cursor-pointer;
 }
 
 .company-logo {
-    @apply w-[3rem] h-[3rem];
+    @apply w-[2rem] h-[1.5rem] lg:w-[3rem] lg:h-[3rem];
 }
 
 .btn-view-experience {
@@ -139,15 +147,15 @@
 }
 
 .experience-date {
-    @apply border p-2 px-4 rounded-full text-sm;
+    @apply border border-[rgba(255,255,255,.4)] p-2 lg:px-4 rounded-full text-[10px] lg:text-sm;
 }
 
 .experience-role {
-    @apply opacity-80;
+    @apply opacity-80 text-sm max-w-[40%];
 }
 
 .skills-set {
-    @apply grid grid-cols-2 gap-5;
+    @apply grid lg:grid-cols-2 gap-5;
 }
 
 .skill {
@@ -175,11 +183,11 @@
 }
 
 .projects {
-    @apply px-[8rem] mt-24;
+    @apply lg:px-[8rem] mt-24;
 }
 
 .projects-list {
-    @apply grid grid-cols-3 gap-8 w-full pt-5;
+    @apply grid lg:grid-cols-3 gap-8 w-full pt-5;
 }
 
 .project {
@@ -187,7 +195,7 @@
 }
 
 .project-img {
-    @apply h-2 w-2 border-[2px] border-transparent px-2 group-hover:border-green-300;
+    @apply self-center border-[2px] border-transparent px-2 group-hover:border-green-300;
 }
 
 .project-info {
@@ -211,11 +219,11 @@
 }
 
 .contact-form {
-    @apply flex flex-col min-w-[38rem] gap-10 text-white;
+    @apply flex flex-col lg:min-w-[38rem] gap-10 text-white;
 }
 
 .contact-info {
-    @apply flex gap-10;
+    @apply flex flex-col lg:flex-row gap-10;
 }
 
 .contact-info > * {
@@ -223,11 +231,11 @@
 }
 
 .textarea {
-    @apply min-h-[14rem] flex-1 resize-none;
+    @apply min-h-[7rem] lg:min-h-[14rem] flex-1 resize-none;
 }
 
 .input, .textarea {
-    @apply p-4 bg-transparent rounded border-[2px] border-[rgba(255,255,255,.1)] placeholder:opacity-40 outline-none focus:border-white;
+    @apply p-3 lg:p-4 bg-transparent rounded border-[2px] border-[rgba(255,255,255,.1)] placeholder:opacity-40 outline-none focus:border-white;
 }
 
 .ntouch {
@@ -235,15 +243,15 @@
 }
 
 .contact-title {
-    @apply text-5xl text-white font-bold leading-[3.6rem];
+    @apply text-4xl lg:text-5xl text-white font-bold lg:leading-[3.6rem];
 }
 
 .contact-desc {
-    @apply text-white opacity-40 text-lg;
+    @apply text-white opacity-40 lg:text-lg;
 }
 
 .contact-primary {
-    @apply text-[#55E6A5] font-bold text-2xl py-7 block;
+    @apply text-[#55E6A5] font-bold text-lg lg:text-2xl py-4 lg:py-7 block;
 }
 
 .contact-social {
@@ -251,20 +259,20 @@
 }
 
 .contact-social-icon  {
-    @apply h-[35px] w-[35px];
+    @apply h-[25px] w-[25px] lg:h-[35px] lg:w-[35px];
 }
 
 .footer {
-    @apply flex pt-16 justify-between mx-[8rem] border-t-[2px] border-[rgba(255,255,255,.2)];
+    @apply flex gap-20 flex-col lg:flex-row mt-20 pt-16 justify-between lg:mx-[8rem] border-t-[2px] border-[rgba(255,255,255,.2)];
 }
 
 .getntouch {
-    @apply flex flex-col items-start gap-4 max-w-[35rem];
+    @apply flex flex-col items-center text-center lg:items-start gap-2 lg:gap-4 max-w-[35rem];
 }
 
 .btn-send {
     background-image: linear-gradient(to right, #55E6A5 1%, transparent 0);
-    @apply hover:text-black border-[1px] border-[rgba(255,255,255,.3)] py-4 uppercase hover:text-black;
+    @apply hover:text-black border-[1px] border-[rgba(255,255,255,.3)] py-3 lg:py-4 uppercase;
 }
 
 .btn-send:hover {
