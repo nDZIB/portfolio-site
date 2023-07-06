@@ -1,6 +1,6 @@
 .app {
     background-image: url('https://ui-themez.smartinnovates.net/items/hawke/assets/imgs/patterns/noise1.png');
-    @apply min-h-screen bg-black bg-opacity-95;
+    @apply relative min-h-screen bg-black bg-opacity-95;
 }
 
 .nav-lg {
@@ -12,8 +12,24 @@
     clip-path: polygon(2% 0,  98% 0, 100% 100%, 0 100%);
 }
 
-.menu-trigger-sm {
-    @apply text-white;
+.nav-sm {
+    @apply shadow-xl border-[1px] border-[rgba(255,255,255,.5)] bg-[#55E6A5] self-start sticky mt-4 top-0 z-20 text-black uppercase w-full flex flex-col;
+}
+
+.nav-trigger-sm ~ .nav-sm {
+    @apply hidden;
+}
+
+.nav-trigger-sm:hover ~ .nav-sm {
+    @apply flex;
+}
+
+.nav-sm > .nav-item > a {
+    @apply py-8 px-4 text-sm block border-t-[1px] border-[rgba(0,0,0,.1)];
+}
+
+.nav-trigger-sm {
+    @apply text-white lg:hidden;
 }
 
 .logo {
@@ -21,13 +37,14 @@
 }
 
 .header {
-    @apply flex px-4 py-4 lg:py-2 items-center justify-between lg:max-w-[70vw] mx-auto;
+    background-image: url('https://ui-themez.smartinnovates.net/items/hawke/assets/imgs/patterns/noise1.png');
+    @apply sticky top-0 z-20 flex flex-wrap px-4 lg:px-10 py-4 lg:py-2 items-center justify-between lg:max-w-[70vw] mx-auto;
 }
 
 /* =========================================== */
 
 .body {
-    @apply max-w-[98vw] rounded lg:py-20 flex flex-col lg:gap-32 lg:rounded-2xl mx-auto lg:max-w-[85vw] min-h-screen border-[1px] border-[rgba(255,255,255,0)];
+    @apply max-w-[98vw] rounded lg:py-20 lg:pt-32 flex flex-col lg:gap-32 lg:rounded-2xl mx-auto lg:max-w-[85vw] min-h-screen border-[1px] border-[rgba(255,255,255,0)];
 }
 
 .body > * {
@@ -78,7 +95,7 @@
 }
 
 .name-cta {
-    @apply text-[#55E6A5]
+    @apply font-bold text-[#55E6A5]
 }
 
 .cta-role {
@@ -263,11 +280,11 @@
 }
 
 .footer {
-    @apply flex gap-20 flex-col lg:flex-row mt-20 pt-16 justify-between lg:mx-[8rem] border-t-[2px] border-[rgba(255,255,255,.2)];
+    @apply pb-8 lg:pb-0 flex gap-20 flex-col lg:flex-row mt-20 pt-16 justify-between lg:mx-[8rem] border-t-[2px] border-[rgba(255,255,255,.2)];
 }
 
 .getntouch {
-    @apply flex flex-col items-center text-center lg:items-start gap-2 lg:gap-4 max-w-[35rem];
+    @apply flex flex-col items-center text-center lg:text-left lg:items-start gap-2 lg:gap-4 max-w-[35rem];
 }
 
 .btn-send {

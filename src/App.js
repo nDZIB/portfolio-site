@@ -30,18 +30,25 @@ function App() {
         <img className={`logo`} src='https://ui-themez.smartinnovates.net/items/hawke/assets/imgs/logo-light.png' />
 
         <ul className={`nav-lg`}>
-          <li className={`nav-item`}><a href='#'>home</a></li>
-          <li className={`nav-item`}><a href='#'>about</a></li>
-          <li className={`nav-item`}><a href='#'>services</a></li>
-          <li className={`nav-item`}><a href='#'>portfolio</a></li>
-          <li className={`nav-item`}><a href='#'>testimonials</a></li>
-          <li className={`nav-item`}><a href='#'>conact</a></li>
+          <li className={`nav-item`}><a href='#about'>about me</a></li>
+          <li className={`nav-item`}><a href='#experience'>experience</a></li>
+          <li className={`nav-item`}><a href='#skills'>skills</a></li>
+          <li className={`nav-item`}><a href='#projects'>projects</a></li>
+          <li className={`nav-item`}><a href='#contact'>contact</a></li>
         </ul>
 
         <button className={`btn-hire`}>Hire Me!</button>
 
-        <button className={`menu-trigger-sm`}><svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M2.75 12.25h10.5m-10.5-4h10.5m-10.5-4h10.5"/></svg></button>
-
+        <button className={`nav-trigger-sm`}>
+          <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M2.75 12.25h10.5m-10.5-4h10.5m-10.5-4h10.5"/></svg>
+        </button>
+        <ul className={`nav-sm`}>
+          <li className={`nav-item`}><a href='#about'>about me</a></li>
+          <li className={`nav-item`}><a href='#experience'>experience</a></li>
+          <li className={`nav-item`}><a href='#skills'>skills</a></li>
+          <li className={`nav-item`}><a href='#projects'>projects</a></li>
+          <li className={`nav-item`}><a href='#contact'>contact</a></li>
+        </ul>
       </header>
 
       <main className={`body`}>
@@ -58,7 +65,7 @@ function App() {
           </figure>
 
           <div className={`summary`}>
-            <div className={`section`}>
+            <div id='about' className={`section`}>
               <h2 className={`cta`}>Hello, I'm <span className={`name-cta`}>Serkwi Bruno Ndzi</span>, </h2>
               <h2 className={`cta`}><span className={`cta-role`}>Full-stack Software Engineer</span></h2>
               <h2 className={`cta mt-2`}>Based in Cameroon</h2>
@@ -85,7 +92,7 @@ function App() {
               </p>
             </div>
 
-            <div className={`experience section`}>
+            <div id='experience' className={`experience section`}>
               <h2 className={`section-title`}>Experience</h2>
 
               <ul className={`experiences`}>
@@ -113,7 +120,7 @@ function App() {
               </ul>
             </div>
 
-            <div className={`skills section`}>
+            <div id='skills' className={`skills section`}>
               <h2 className={`section-title`}>Skills</h2>
 
               <ul className={`skills-set`}>
@@ -162,7 +169,7 @@ function App() {
 
         </div>
 
-        <section className={`projects`}>
+        <section id='projects' className={`projects`}>
           <h2 className={`section-title`}>Projects</h2>
           <ul className={`projects-list`}>
             {
@@ -183,7 +190,7 @@ function App() {
           </ul>
         </section>
 
-        <footer className={`footer`}>
+        <footer id='contact' className={`footer`}>
           <div className='getntouch'>
             <span className={`ntouch`}>Get in touch</span>
             <h3 className={`contact-title`}>Let's make your brand brilliant!</h3>
