@@ -8,9 +8,9 @@ export const client = new ApolloClient({
 export const GET_PORTFOLIO = gql`
 query portforlio {
     portfolios (first: 1) {
-      id,
       email,
       role,
+      yearsExperience,
       avatar {
         url
       },
@@ -31,19 +31,24 @@ query portforlio {
         id,
         url,
         name,
-        logo
+        logo,
+        fill
       },
       projects {
         id,
         name,
         url,
-        tags
+        tags,
+        image {
+          url
+        }
       },
       skills {
         id,
         name,
         score,
-        icon
+        icon,
+        fill
       }
     }
   }

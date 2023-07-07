@@ -58,7 +58,7 @@
     @apply gap-2 flex justify-center pt-4;
 }
 .sm-link {
-    @apply border block rounded-full h-[40px] w-[40px];
+    @apply border block rounded-full p-2 bg-white;
 }
 
 .bio {
@@ -199,7 +199,7 @@
 }
 
 .projects {
-    @apply lg:px-[8rem] mt-24;
+    @apply w-full lg:px-[8rem] mt-24;
 }
 
 .projects-list {
