@@ -4,10 +4,11 @@ import logo from './assets/images/logo.png';
 import { useQuery } from '@apollo/client';
 import { GET_PORTFOLIO } from './_lib/apollo';
 import { Icon } from '@iconify/react';
-
+import useAnalytics from './hooks/useAnalytics'; // Add this import
 
 function App() {
-
+  useAnalytics();
+  
   const { loading, error, data } = useQuery(GET_PORTFOLIO);
 
   const bodyEltRef = React.createRef();
